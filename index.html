@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <input type="text" id="sitems" placeholder="Your city or Country">
+         <button id="search_btn"><i class="fas fa-search"></i></button>
+    </header>
+    <main>
+        <section id="top_section">
+            <i class="fa-solid fa-map-pin fa-xl" style="padding: 8px; color:#0077ff;"></i> <span id="location_name">Lahore</span><span id="country_code">~PK</span>
+            <img src=" https://openweathermap.org/img/wn/02d@2x.png" alt="Weather icon" id="weather_icon">
+            
+     
+            <p id="description">Clouds</p>
+            <ul id="others">
+                <li class="oitems oitem1">
+                    <span>Pressure</span>
+                    <i class="fa-solid fa-gauge-high" style="color: #ffffff; font-size: xx-large; padding-top: 5px;  padding-left: 10px;"></i>
+                    <span  id="ovalue1">20</span>
+                </li>
+                <li class="oitems  oitem2">
+                    <span>Temperature</span>
+                    <i class="fa-solid fa-temperature-quarter" style="color: #ffffff; padding-top: 5px;  font-size: xx-large;  padding-left: 15px;"></i>
+                    <span id="ovalue2">40</span>
+                </li>
+                <li class="oitems  oitem3">
+                    <span>Wind speed</span>
+                    <i class="fa-solid fa-wind" style="color: #ffffff; font-size: xx-large; padding-top: 5px;  padding-left: 15px;"></i>
+                    <span  id="ovalue3">232</span>
+                </li>
+                
+            </ul>
+      
+        </section>
+    
+    </main>
+   
+    <div id="error_box">
+        <span id="close_error">close</span>
+        <h1>Sorry!</h1>
+        <p id="error_msg">City not found</p>
+      </div>
+    <footer>
+        @CopyRight 2025 Made by Haseeb Bhatti
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Playwrite+RO:wght@100..400&display=swap');
+body{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: aqua;
+    position: relative;
+
+}
+header input{
+    border: 0px solid rgb(97, 97, 97);
+    height: 0px;
+    width: 0px;
+    border-radius: 30px;
+    padding: 0px;
+    transition: all 1.5s;
+    font-size: 20px;
+}
+header button{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #ffffff;
+     border-radius:50%;
+     box-shadow: 1px 1px 12px 2px rgb(243, 241, 241);
+    padding: 15px;
+    font-size: large;
+    box-sizing: border-box;
+    position: fixed;
+    top: 15px ;
+    right: 50px;
+    transition: transform 1.5s;
+    
+}
+#sitems{
+  position: fixed;
+  top: 22px ;
+  right: 115px;
+}
+#sitems:focus{
+    border-color: black;
+}
+.change_width{
+    width: 220px;
+    padding: 5px;
+    padding-left: 20px;
+    border-width: 1px;
+    height: 30px;
+
+}
+footer{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #ffffff;
+    border-radius: 20px;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    width: 10vw;
+    padding: 10px;
+    font-size:large;
+    box-sizing: border-box;
+    text-align: center;
+}
+#top_section{
+    box-shadow: 2px 2px 12px 2px black;
+    width: 47%;
+    border-radius: 50px;
+    margin: auto;
+    text-align: center;
+   margin-top: 10px;
+   background: #2980B9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ }
+#location_name{
+    font-size: xx-large;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    color: #000000;
+    font-weight: 900;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#country_code{
+    font-size: x-large;
+    font-weight: bolder;
+    color: #070202;
+    padding: 15px;
+    font-family: "Playwrite RO", cursive;
+}
+#description{
+    font-size: xx-large;
+    font-weight: 900;
+
+}
+#weather_icon{
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+#others{
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style-type: none;
+}
+.oitems{
+    width: 25%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 8px;
+    border-radius: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.oitems span{
+    padding: 10px;
+    font-size: larger;
+    font-weight: 900;
+    color: #ffffff;
+}
+#ovalue1,#ovalue2,#ovalue3{
+    padding-top: 20px;
+}
+#value2{
+    padding-top: 30px;
+}
+#description{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.oitem1{
+    background: #F0C27B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.oitem2{
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+   }
+   .oitem3{
+    background: #870000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+   }
+
+   #error_box{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    background-color: #ffffff;
+    width: 30vw;
+    border-radius: 30px;
+    text-align: center;
+    display: none;
+    transition: all 1.5s ease-in;
+   }
+   #close_error{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+ border-radius: 55%;
+    background-color: red;
+    padding: 15px;
+   }
+@media screen and (max-width:480px) {
+
+header button{
+right: 7px;
+}
+#sitems{
+    right: 60px;
+}
+#weather_icon{
+    width: 50%;
+    
+}
+.oitems span{
+    font-size: 10px;
+    padding: 0%;
+}
+#top_section{
+    margin-top: 20px;
+    width: 100%;
+}
+footer{
+    margin: auto;
+    margin-top: 20px;
+    width: 80vw;
+    position:static;
+}
+li i{
+    padding: 15px ;
+}
+#close_error{
+ 
+    padding: 2px;
+   }
+}
